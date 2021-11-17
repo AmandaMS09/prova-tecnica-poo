@@ -38,11 +38,11 @@
             this.lbl_marca = new System.Windows.Forms.Label();
             this.txt_descricao = new System.Windows.Forms.TextBox();
             this.lbl_descricao = new System.Windows.Forms.Label();
-            this.dgv_estoque = new System.Windows.Forms.DataGridView();
+            this.dgv_produtos = new System.Windows.Forms.DataGridView();
             this.btn_cadastrar = new System.Windows.Forms.Button();
             this.btn_alterar = new System.Windows.Forms.Button();
             this.btn_excluir = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_estoque)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_produtos)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_id
@@ -137,14 +137,15 @@
             this.lbl_descricao.TabIndex = 10;
             this.lbl_descricao.Text = "Descrição";
             // 
-            // dgv_estoque
+            // dgv_produtos
             // 
-            this.dgv_estoque.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgv_estoque.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_estoque.Location = new System.Drawing.Point(15, 247);
-            this.dgv_estoque.Name = "dgv_estoque";
-            this.dgv_estoque.Size = new System.Drawing.Size(432, 180);
-            this.dgv_estoque.TabIndex = 12;
+            this.dgv_produtos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgv_produtos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_produtos.Location = new System.Drawing.Point(15, 247);
+            this.dgv_produtos.Name = "dgv_produtos";
+            this.dgv_produtos.Size = new System.Drawing.Size(432, 180);
+            this.dgv_produtos.TabIndex = 12;
+            this.dgv_produtos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_produtos_CellClick);
             // 
             // btn_cadastrar
             // 
@@ -155,6 +156,7 @@
             this.btn_cadastrar.TabIndex = 13;
             this.btn_cadastrar.Text = "Cadastrar";
             this.btn_cadastrar.UseVisualStyleBackColor = true;
+            this.btn_cadastrar.Click += new System.EventHandler(this.btn_cadastrar_Click);
             // 
             // btn_alterar
             // 
@@ -165,6 +167,7 @@
             this.btn_alterar.TabIndex = 14;
             this.btn_alterar.Text = "Alterar";
             this.btn_alterar.UseVisualStyleBackColor = true;
+            this.btn_alterar.Click += new System.EventHandler(this.btn_alterar_Click);
             // 
             // btn_excluir
             // 
@@ -175,6 +178,7 @@
             this.btn_excluir.TabIndex = 15;
             this.btn_excluir.Text = "Excluir";
             this.btn_excluir.UseVisualStyleBackColor = true;
+            this.btn_excluir.Click += new System.EventHandler(this.btn_excluir_Click);
             // 
             // FrmProdutos
             // 
@@ -185,7 +189,7 @@
             this.Controls.Add(this.btn_excluir);
             this.Controls.Add(this.btn_alterar);
             this.Controls.Add(this.btn_cadastrar);
-            this.Controls.Add(this.dgv_estoque);
+            this.Controls.Add(this.dgv_produtos);
             this.Controls.Add(this.txt_descricao);
             this.Controls.Add(this.lbl_descricao);
             this.Controls.Add(this.txt_marca);
@@ -199,7 +203,7 @@
             this.Name = "FrmProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmEstoque";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_estoque)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_produtos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,7 +220,7 @@
         private System.Windows.Forms.Label lbl_marca;
         private System.Windows.Forms.TextBox txt_descricao;
         private System.Windows.Forms.Label lbl_descricao;
-        private System.Windows.Forms.DataGridView dgv_estoque;
+        private System.Windows.Forms.DataGridView dgv_produtos;
         private System.Windows.Forms.Button btn_cadastrar;
         private System.Windows.Forms.Button btn_alterar;
         private System.Windows.Forms.Button btn_excluir;

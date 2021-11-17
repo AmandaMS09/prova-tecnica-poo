@@ -51,8 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Code\BLL\LoginBLL.cs" />
+    <Compile Include="Code\BLL\ProdutoBLL.cs" />
     <Compile Include="Code\DAL\AcessoBancoDados.cs" />
     <Compile Include="Code\DTO\LoginDTO.cs" />
+    <Compile Include="Code\DTO\ProdutoDTO.cs" />
     <Compile Include="Ui\FrmProdutos.cs">
       <SubType>Form</SubType>
     </Compile>
