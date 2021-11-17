@@ -1,2 +1,3 @@
-# prova-tecnica-poo
-Prova Final da matéria de POO com a professora Michelle Belli. Programa de supermercado feito com Windos Forms.
+# Prova Técnica POO
+
+Programa de estoque de supermercado feito com Windows Forms.
